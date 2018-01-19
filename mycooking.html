@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<link href="file:///C:/Users/suneeta/Downloads/favicon%20(4).ico" rel="icon" type="image/x-icon" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="foodstyle.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">// * Dependencies * 
+// this function requires the following snippets:
+// JavaScript/Randomizers/randomNumber
+// JavaScript/conversions/base_conversion/decToHex
+	// Example:
+ randomImage(["file:///C:/Users/suneeta/OneDrive/Pictures/Saved%20Pictures/Indian_Restaraunt_Banner.jpg",1050,150,"file:///C:/Users/suneeta/OneDrive/Pictures/Sunny's%20Favourite%20Foods/Cooking%20-%20Banner.jpg",1050,150,"file:///C:/Users/suneeta/OneDrive/Pictures/Sunny's%20Favourite%20Foods/Cauliflower-Soup.jpg",1050,150]); 
+
+// * Dependencies * 
+// this function requires the following snippet:
+// JavaScript/Randomizers/randomNumber
+
+function randomImage(imgArr)
+{
+  var imgSrc, imgW, imgH, r;
+  r = randomNumber(imgArr.length / 3)-1;
+  
+  imgSrc = imgArr[r * 3];
+  imgW = imgArr[(r * 3)+1];
+  imgH = imgArr[(r * 3)+2];
+
+  document.write('<IMG SRC='+imgSrc+' WIDTH='+imgW+' HEIGHT='+imgH+'>');
+}
+function randomNumber(limit){
+  return Math.floor(Math.random()*limit);
+}
+
+function randomBgColor()
+{
+  var r,g,b;
+	
+  r = decToHex(randomNumber(256)-1);
+  g = decToHex(randomNumber(256)-1);function decToHex(dec)
+
+{
+
+  var hexStr = "0123456789ABCDEF";
+
+  var low = dec % 16;
+
+  var high = (dec - low)/16;
+
+  hex = "" + hexStr.charAt(high) + hexStr.charAt(low);
+
+  return hex;
+
+}
+
+function randomNumber(limit){
+  return Math.floor(Math.random()*limit);
+}
+
+  b = decToHex(randomNumber(256)-1);
+	
+ document.bgColor = "#" + r + g + b;
+
+	window.setTimeout=("randomBgColor()", 80)
+}
+ function newfunc(){
+	 alert("Learn More about cooking!!!");
+ }
+	
+	
+</script>
+
+</head>
+
+<body onLoad="randomImage();">
+<br><br>
+<div id ="container">
+<div id="header">
+<div class="navigation">
+
+	<ul>
+
+		<li><a href="#"><span>Home</span></a></li>
+
+		<li><a href="#"><span>About</span></a></li>
+
+		<li><a href="#"><span>Menu</span></a></li>
+
+		<li ><a href="contact1.html"><span>Contact Us</span></a></li>
+	</ul>
+	</div>
+	</div>
+
+
+<div id="main">
+		<h2>About Chipotle</h2>
+	<section class="home">
+	  <h2 style="font-family: TradeGothicLTCom-Bold; -webkit-font-smoothing: antialiased; box-sizing: border-box; text-transform: uppercase; margin: 25px 0px 0px; font-size: 40px; line-height: 40px; text-align: center; color: rgb(84, 57, 45); font-weight: 700; letter-spacing: -1px; padding: 0px 0px 3px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">CHECK OUT OUR LATEST HAPPENINGS BELOW</h2>
+	  <p style="text-align:center;">We&rsquo;ve always got something in the works, on the farm, in the restaurants, and everywhere in between. </p>
+	</section>
+	<p onClick="newfunc()">
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+
+	</p>
+  </div>
+<div id= "randomImage"><! -- Replace name@website.com with your email address -->
+  <p><a href="mailto:suneeta1g@gmail.com">Email Us</a></p>
+		<div id ='footer'>copyright @2018
+		
+<ul>
+<!-- Add font awesome icons -->
+<li>
+<a href="#" class="fa fa-facebook">
+	</a></li>
+	<li>
+<a href="#" class="fa fa-twitter"></a>
+<li>
+<a href="#" class="fa fa-google">
+</a>
+	</li></ul>
+<!--<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+<a href="#" class="fa fa-snapchat-ghost"></a>
+<a href="#" class="fa fa-skype"></a>
+<a href="#" class="fa fa-android"></a>
+<a href="#" class="fa fa-dribbble"></a>
+<a href="#" class="fa fa-vimeo"></a>
+<a href="#" class="fa fa-tumblr"></a>
+<a href="#" class="fa fa-vine"></a>
+<a href="#" class="fa fa-foursquare"></a>
+<a href="#" class="fa fa-stumbleupon"></a>
+<a href="#" class="fa fa-flickr"></a>
+<a href="#" class="fa fa-yahoo"></a>
+<a href="#" class="fa fa-reddit"></a>
+<a href="#" class="fa fa-rss"></a
+	<li><a href="http://facebook.com" class="social-icon soc-facebook color-icon border-icon rounded-<icon"></a></li></ul>-->
+	</div>
+	</div>
+</body>
+</html>
